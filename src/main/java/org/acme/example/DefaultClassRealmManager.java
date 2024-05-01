@@ -28,35 +28,36 @@ public class DefaultClassRealmManager implements ClassRealmManager {
     @Inject
     public DefaultClassRealmManager(org.apache.maven.classrealm.DefaultClassRealmManager delegate) {
         this.delegate = delegate;
+        logger.info("ACME-REALM Created");
     }
 
     @Override
     public ClassRealm getCoreRealm() {
-        logger.info("ACME getCoreRealm");
+        logger.info("ACME-REALM  getCoreRealm");
         return delegate.getCoreRealm();
     }
 
     @Override
     public ClassRealm getMavenApiRealm() {
-        logger.info("ACME getMavenApiRealm");
+        logger.info("ACME-REALM  getMavenApiRealm");
         return delegate.getMavenApiRealm();
     }
 
     @Override
     public ClassRealm createProjectRealm(Model model, List<Artifact> list) {
-        logger.info("ACME createProjectRealm");
+        logger.info("ACME-REALM  createProjectRealm");
         return delegate.createProjectRealm(model, list);
     }
 
     @Override
     public ClassRealm createExtensionRealm(Plugin plugin, List<Artifact> list) {
-        logger.info("ACME createExtensionRealm");
+        logger.info("ACME-REALM  createExtensionRealm");
         return delegate.createExtensionRealm(plugin, list);
     }
 
     @Override
     public ClassRealm createPluginRealm(Plugin plugin, ClassLoader classLoader, List<String> list, Map<String, ClassLoader> map, List<Artifact> list1) {
-        logger.info("ACME createPluginRealm");
+        logger.info("ACME-REALM  createPluginRealm");
         return delegate.createPluginRealm(plugin, classLoader, list, map, list1);
     }
 }
