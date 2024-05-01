@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extensions>
-  <extension>
-    <groupId>org.acme</groupId>
-    <artifactId>example</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </extension>
+<!--  <extension>-->
+<!--    <groupId>org.acme</groupId>-->
+<!--    <artifactId>example</artifactId>-->
+<!--    <version>0.0.1-SNAPSHOT</version>-->
+<!--  </extension>-->
 </extensions>

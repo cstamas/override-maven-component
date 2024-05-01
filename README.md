@@ -2,6 +2,12 @@
 
 Problem: "lets have a Maven Core extension that overrides a Maven Core component"
 
+Steps:
+* build/install this project
+* uncomment extension in `.mvn/extensions.xml`
+* invoke maven again
+* you can see that overridden `ClassRealmManager` kicks in, but `ProjectDependenciesResolver` does not 
+
 ## How is core component defined?
 
 It seems there are huge differences if Core Component is JSR330 or Plexus (legacy).
